@@ -1,0 +1,8 @@
+<template>
+	<h1>Aurelia issues:</h1>
+	<ul>
+		<li repeat.for="repo of repos">
+			<a href.bind="repo.html_url">${repo.title}</a>
+		</li>
+	</ul>
+</template>
